@@ -11,12 +11,15 @@ To find the length of the longest palindromic subsequence in it.
 3. Create a 2D array dp of size n x n and initialize all values to 0.
 4. Set all diagonal elements dp[i][i] = 1, since a single character is a palindrome of length 1.
 5. For each substring length l from 2 to n:
+
    For each starting index i, compute the ending index j = i + l - 1
+
    If X[i] == X[j], set dp[i][j] = dp[i+1][j-1] + 2
+
    Else, set dp[i][j] = max(dp[i+1][j], dp[i][j-1])
-6. After filling the table, dp[0][n-1] contains the length of the longest palindromic subsequence.
-7. Return dp[0][n-1] as the result.
-8. End the program.
+7. After filling the table, dp[0][n-1] contains the length of the longest palindromic subsequence.
+8. Return dp[0][n-1] as the result.
+9. End the program.
 
 
 ## Program:
