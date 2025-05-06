@@ -12,10 +12,12 @@ To find the longest string (or strings) that is a substring (or are substrings) 
 4. Initialize a 2D matrix lookup of size (m+1) x (n+1) with all values set to 0.
 5. Initialize two variables: maxLength = 0 and endingIndex = m.
 6. Loop through the matrix from i = 1 to m and j = 1 to n:
+
    If X[i-1] == Y[j-1], set lookup[i][j] = lookup[i-1][j-1] + 1
+
    If lookup[i][j] > maxLength, update maxLength and set endingIndex = i
-7. Extract the substring from X[endingIndex - maxLength : endingIndex] and return it.
-8. End the program.   
+8. Extract the substring from X[endingIndex - maxLength : endingIndex] and return it.
+9. End the program.   
 
 ## Program:
 ```
