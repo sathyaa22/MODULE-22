@@ -11,13 +11,14 @@ To find the minimum number of operations to convert str1 to str2 using Naive rec
 4. If m == 0, return n (all insertions needed). If n == 0, return m (all deletions needed).
 5. If x[m-1] == y[n-1], recursively compute edit distance for x[0..m-2] and y[0..n-2].
 6. If characters differ, consider the minimum of the three recursive operations:
+
    Replace (ed(x, y, m-1, n-1))
 
    Insert (ed(x, y, m, n-1))
 
    Delete (ed(x, y, m-1, n))
-7. Return the minimum value.
-8. End the program.
+8. Return the minimum value.
+9. End the program.
 
    
 ## Program:
