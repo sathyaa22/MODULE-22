@@ -23,12 +23,12 @@ To find the length of the longest palindromic subsequence in it.
 
 
 ## Program:
+
 ```
 Program to implement to find the length of the longest palindromic subsequence in it
 Developed by: SATHYAA R
 Register Number: 212223100052
 ```
-
 ```
 def Lps(X):
     n=len(X)
