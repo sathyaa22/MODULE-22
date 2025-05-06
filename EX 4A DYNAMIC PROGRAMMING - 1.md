@@ -11,11 +11,13 @@ To find longest common subsequence using Dynamic Programming.
 3. Let m = len(str1) and n = len(str2).
 4. Create a 2D matrix of size (m+1) x (n+1) and initialize all elements to 0.
 5. Loop through the matrix from i = 1 to m and j = 1 to n:
+
    If str1[i-1] == str2[j-1], set matrix[i][j] = 1 + matrix[i-1][j-1]
+
    Else, set matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1])
-6. After filling the matrix, the value at matrix[m][n] holds the length of the LCS.
-7. Return matrix[m][n] as the result.
-8. End the program.
+7. After filling the matrix, the value at matrix[m][n] holds the length of the LCS.
+8. Return matrix[m][n] as the result.
+9. End the program.
   
 
 ## Program:
